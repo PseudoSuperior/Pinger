@@ -1,0 +1,22 @@
+{
+  "name": "countdown-bot",
+  "version": "1.0.0",
+  "description": "Globama?",
+  "main": "index.js",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "discord.js": "^12.2.0",
+    "dotenv": "^9.0.2",
+    "eslint": "^7.0.0",
+    "mongodb": "^2.2.33",
+    "mongoose": "^5.12.8",
+    "ms": "^2.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EJL",
+  "license": "ISC",
+  "keywords": []
+}
