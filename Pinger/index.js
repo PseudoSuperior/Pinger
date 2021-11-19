@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
-const { Client, MessageEmbed, Collection, VolumeInterface } = require("discord.js");
-const ping = require("./models/Pinger.js");
+const { Client} = require("discord.js");
+const ping = require("./models/pinger.js");
 
 const { config } = require("dotenv")
 config({
@@ -29,10 +29,10 @@ client.on("message", async message => {
 //Pinging Business=======
 if (message.content.startsWith(`??pinging`)) {
 
-if (!message.member.permissions.has("ADMINISTRATOR")) return message.channel.send(`You need __**ADMIN**__ Perms for this to work ‼`)
+  if (!message.member.permissions.has("ADMINISTRATOR")) return message.channel.send(`You need __**ADMIN**__ Perms for this to work ‼`)
      
-    if(!args[0]) return message.reply("No message specified!\n__**Correct Usage**__: `??ping <Message to appear along with Ping>`")
-    var string = args.slice(0).join(" ");
+    if(!args[0]) return message.reply("No message specified!\n__**Correct Usage**__: `??pinging <Message to appear along with Ping>`")
+    var string = args.slice(1).join(" ");
 
 let doc = await ping.findOne({ guildId: message.guild.id });
 const members = message.guild.members.cache;
