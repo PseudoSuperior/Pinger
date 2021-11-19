@@ -28,6 +28,8 @@ client.on("message", async message => {
 
 //Pinging Business=======
 if (message.content.startsWith(`??ping`)) {
+
+if (!message.member.permissions.has("ADMINISTRATOR")) return message.channel.send(`You need __**ADMIN**__ Perms for this to work ‼`)
      
     if(!args[0]) return message.reply("No message specified!\n__**Correct Usage**__: `??ping <Message to appear along with Ping>`")
     var string = args.slice(0).join(" ");
