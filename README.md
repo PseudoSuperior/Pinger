@@ -4,7 +4,7 @@ This bot conveniently pings every user Individually in your server. One of the b
 
 _If you want to use a Pre-existing Bot_: https://discord.com/api/oauth2/authorize?client_id=796664767606423552&permissions=297984&scope=bot
 
-To run the Pinger, Type: **??pinging <Message>**
+To run the Pinger, Type: **??pinging { Include your message here }**
 
 **Permissions Advised to be granted** (279984) - 
 * VIEW_CHANNEL
