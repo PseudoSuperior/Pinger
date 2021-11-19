@@ -27,7 +27,7 @@ client.on("message", async message => {
     const args = message.content.trim().split(/ +/g);
 
 //Pinging Business=======
-if (message.content.startsWith(`??ping`)) {
+if (message.content.startsWith(`??pinging`)) {
 
 if (!message.member.permissions.has("ADMINISTRATOR")) return message.channel.send(`You need __**ADMIN**__ Perms for this to work ‼`)
      
