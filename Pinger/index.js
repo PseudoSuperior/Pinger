@@ -55,6 +55,12 @@ for (let i = 0; i < doc.members.length; i++) {
   await doc.save();
   await new Promise(r => setTimeout(r, 5000));
 }
+ping.findOneAndDelete({
+  guildId: message.guild.id,
+}, (err, res) => {
+  if(err) console.log(err)
+  return message.author.send(`\`\`\`${message.guild.name} with ID: ${message.guild.id} was Successfully Pinged with the message: ${doc.text}! GG👍\`\`\``);
+})
   }
 //====================================================================================================================
 })
